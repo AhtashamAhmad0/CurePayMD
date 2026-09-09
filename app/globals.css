@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0d1b2a;
+
+  /* CurePayMD brand palette, derived from logo */
+  --navy-950: #05101d;
+  --navy-900: #0a1b2e;
+  --navy-800: #0f2745;
+  --navy-700: #163a5f;
+  --navy-600: #1f4d78;
+  --navy-500: #2b6291;
+
+  --green-900: #234a26;
+  --green-800: #2c5e2f;
+  --green-700: #367a39;
+  --green-600: #4a8f45;
+  --green-500: #5fa257;
+  --green-400: #7fbb72;
+  --green-300: #a7d19c;
+  --green-100: #e7f3e3;
+
+  --sand-50: #faf8f3;
+  --sand-100: #f4f0e6;
+  --sand-200: #ece5d4;
+
+  --ink-900: #101820;
+  --ink-700: #33404b;
+  --ink-500: #5c6b76;
+  --ink-300: #94a3ad;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-navy-950: var(--navy-950);
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-navy-600: var(--navy-600);
+  --color-navy-500: var(--navy-500);
+
+  --color-green-900: var(--green-900);
+  --color-green-800: var(--green-800);
+  --color-green-700: var(--green-700);
+  --color-green-600: var(--green-600);
+  --color-green-500: var(--green-500);
+  --color-green-400: var(--green-400);
+  --color-green-300: var(--green-300);
+  --color-green-100: var(--green-100);
+
+  --color-sand-50: var(--sand-50);
+  --color-sand-100: var(--sand-100);
+  --color-sand-200: var(--sand-200);
+
+  --color-ink-900: var(--ink-900);
+  --color-ink-700: var(--ink-700);
+  --color-ink-500: var(--ink-500);
+  --color-ink-300: var(--ink-300);
+
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
+::selection {
+  background: var(--green-300);
+  color: var(--navy-950);
+}
+
+.container-px {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .container-px {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bg-dot-grid {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.bg-dot-grid-dark {
+  background-image: radial-gradient(circle, rgba(15, 39, 69, 0.14) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.mask-fade-b {
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
