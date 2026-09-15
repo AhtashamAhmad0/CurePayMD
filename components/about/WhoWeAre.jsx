@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-import { Sparkles } from "lucide-react";
-=======
 import Image from "next/image";
 import partnershipImage from "@/public/images/medical/practice-partnership.png";
 import { Stethoscope } from "lucide-react";
->>>>>>> ali
 import ScrollReveal from "@/components/shared/ScrollReveal";
 
 export default function WhoWeAre() {
@@ -34,19 +30,11 @@ export default function WhoWeAre() {
 
         <ScrollReveal delay={100} className="lg:col-span-6 order-1 lg:order-2">
           <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-navy-900 to-navy-950 aspect-[4/3]">
-<<<<<<< HEAD
-            <div className="absolute inset-0 bg-dot-grid opacity-30" />
-            <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
-              <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-green-500/20 text-green-300">
-                  <Sparkles className="h-5 w-5" />
-=======
             <Image src={partnershipImage} alt="A doctor and practice administrator collaborating" fill sizes="(max-width: 1023px) 100vw, 50vw" className="object-cover" />
             <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/10 bg-navy-950/90 p-5 backdrop-blur">
               <div className="flex items-center gap-3">
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-green-500/20 text-green-300">
                   <Stethoscope className="h-5 w-5" />
->>>>>>> ali
                 </span>
                 <div>
                   <p className="text-sm font-semibold text-white">

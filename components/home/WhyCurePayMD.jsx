@@ -70,22 +70,14 @@ const carouselItems = reasons.map((reason) => {
 
 export default function WhyCurePayMD() {
   return (
-<<<<<<< HEAD
-    <section className="relative overflow-hidden bg-navy-950 py-24 lg:py-32">
-=======
     <section className="why-section relative overflow-hidden bg-navy-950 py-24 lg:py-32">
->>>>>>> ali
       {/* Background Ambience */}
       <div className="absolute inset-0 bg-dot-grid opacity-10 pointer-events-none" aria-hidden="true" />
       <div className="absolute -top-32 left-1/2 h-[300px] w-[800px] -translate-x-1/2 rounded-full bg-green-500/5 blur-3xl pointer-events-none" />
 
       <div className="relative container-px mx-auto max-w-[1400px]">
         {/* Centered Heading */}
-<<<<<<< HEAD
-        <div className="mx-auto mb-16 max-w-3xl text-center lg:mb-24">
-=======
         <div className="mx-auto mb-16 max-w-3xl text-center lg:mb-12">
->>>>>>> ali
           <ScrollReveal>
             <SectionHeading
               eyebrow="Why CurePayMD"
@@ -98,23 +90,6 @@ export default function WhyCurePayMD() {
 
         {/* Depth Carousel */}
         <ScrollReveal>
-<<<<<<< HEAD
-          <div style={{ height: "500px", position: "relative" }}>
-            <DepthCarousel
-              items={carouselItems}
-              depth={220}
-              spread={90}
-              tilt={22}
-              tiltDirection="right"
-              perspective={1400}
-              visibleCards={4}
-              falloff={0.2}
-              blur={6}
-              autoplay={false}
-              loop
-              cardWidth={300}
-              cardHeight={380}
-=======
           <div style={{ height: "390px", position: "relative" }}>
             <DepthCarousel
               items={carouselItems}
@@ -130,7 +105,6 @@ export default function WhyCurePayMD() {
               loop
               cardWidth={300}
               cardHeight={310}
->>>>>>> ali
               radius={18}
               tint="#05060a"
               duration={700}

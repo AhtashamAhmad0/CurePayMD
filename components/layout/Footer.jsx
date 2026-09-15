@@ -9,28 +9,16 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-navy-950 text-white">
-<<<<<<< HEAD
-      <div className="absolute inset-0 bg-dot-grid opacity-40 pointer-events-none" />
-      <div className="relative container-px mx-auto max-w-[1400px] py-16 lg:py-20">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-4">
-            <div className="relative h-10 w-[172px] rounded-md bg-white/95 px-2 py-1.5">
-=======
       <div className="absolute inset-0 bg-dot-grid opacity-5 pointer-events-none" />
       <div className="relative container-px mx-auto max-w-[1400px] py-16 lg:py-20">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <div className="relative h-16 w-[190px] rounded-md bg-white/95 px-2 py-1.5">
->>>>>>> ali
               <Image
                 src={logo}
                 alt="CurePayMD logo"
                 fill
-<<<<<<< HEAD
-                sizes="180px"
-=======
                 sizes="190px"
->>>>>>> ali
                 className="object-contain object-left p-1"
               />
             </div>
@@ -55,11 +43,7 @@ export default function Footer() {
             </div>
           </div>
 
-<<<<<<< HEAD
-          <div className="lg:col-span-3 lg:col-start-6">
-=======
           <div className="lg:col-span-3">
->>>>>>> ali
             <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">
               Services
             </h3>
