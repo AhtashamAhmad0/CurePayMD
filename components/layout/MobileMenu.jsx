@@ -23,7 +23,11 @@ export default function MobileMenu({ open, onClose }) {
 
   return (
     <div
+<<<<<<< HEAD
       className={`fixed inset-0 z-[60] lg:hidden transition-visibility ${
+=======
+      className={`fixed inset-0 z-[60] xl:hidden transition-visibility ${
+>>>>>>> ali
         open ? "visible" : "invisible delay-300"
       }`}
       aria-hidden={!open}
@@ -128,3 +132,7 @@ export default function MobileMenu({ open, onClose }) {
     </div>
   );
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ali

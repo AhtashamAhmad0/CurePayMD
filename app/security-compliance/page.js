@@ -1,6 +1,10 @@
 import PageHero from "@/components/shared/PageHero";
 import SecurityPractices from "@/components/security/SecurityPractices";
+<<<<<<< HEAD
 import Button from "@/components/ui/Button";
+=======
+import PracticeCTA from "@/components/shared/PracticeCTA";
+>>>>>>> ali
 import { ShieldCheck } from "lucide-react";
 
 export const metadata = {
@@ -35,6 +39,7 @@ export default function SecurityCompliancePage() {
 
       <SecurityPractices />
 
+<<<<<<< HEAD
       <section className="bg-sand-50 py-16">
         <div className="container-px mx-auto max-w-[1400px] flex flex-col items-center gap-5 text-center">
           <p className="max-w-xl text-base text-ink-500">
@@ -44,6 +49,9 @@ export default function SecurityCompliancePage() {
           <Button href="/contact">Ask Us About Security</Button>
         </div>
       </section>
+=======
+      <PracticeCTA title="Confidence starts with a conversation." description="Have specific questions about how we handle data for your practice? We're glad to walk through it." buttonLabel="Ask us about security" />
+>>>>>>> ali
     </>
   );
 }

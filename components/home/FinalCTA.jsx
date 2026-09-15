@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Phone } from "lucide-react";
 import Button from "@/components/ui/Button";
 import { companyPhone, companyPhoneHref } from "@/data/navigation";
@@ -42,4 +43,9 @@ export default function FinalCTA() {
       </div>
     </section>
   );
+=======
+import PracticeCTA from "@/components/shared/PracticeCTA";
+export default function FinalCTA() {
+  return <PracticeCTA title="Ready for billing that keeps pace with your practice?" />;
+>>>>>>> ali
 }

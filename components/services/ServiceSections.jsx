@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import PracticeCTA from "@/components/shared/PracticeCTA";
+>>>>>>> ali
 import * as Icons from "lucide-react";
 import { Check } from "lucide-react";
 import Button from "@/components/ui/Button";
@@ -14,7 +18,11 @@ export function ServiceHero({ service, variantIndex = 0 }) {
 
   return (
     <section
+<<<<<<< HEAD
       className={`relative overflow-hidden pt-36 pb-20 lg:pt-44 lg:pb-24 ${
+=======
+      className={`service-page-hero relative overflow-hidden pt-36 pb-20 lg:pt-44 lg:pb-24 ${
+>>>>>>> ali
         dark ? "bg-navy-950" : "bg-gradient-to-br from-navy-950 to-green-900"
       }`}
     >
@@ -139,6 +147,7 @@ export function ServiceBenefits({ service, variantIndex = 0 }) {
 }
 
 export function ServiceCTA({ service }) {
+<<<<<<< HEAD
   return (
     <section className="bg-white py-20">
       <div className="container-px mx-auto max-w-[900px] text-center">
@@ -157,4 +166,7 @@ export function ServiceCTA({ service }) {
       </div>
     </section>
   );
+=======
+  return <PracticeCTA title={`Ready to simplify ${service.shortName.toLowerCase()} for your practice?`} description="Get a free billing assessment and see exactly where CurePayMD can help." />;
+>>>>>>> ali
 }

@@ -27,7 +27,11 @@ const steps = [
 
 export default function RCMProcess() {
   return (
+<<<<<<< HEAD
     <section className="bg-sand-50 py-20 lg:py-28">
+=======
+    <section className="process-section bg-sand-50 py-20 lg:py-28">
+>>>>>>> ali
       <div className="container-px mx-auto max-w-[1400px]">
         <SectionHeading
           eyebrow="Our Process"
