@@ -75,14 +75,9 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
         />
-<<<<<<< HEAD
-        <Navbar />
-        <main>{children}</main>
-=======
         <a href="#main-content" className="skip-link">Skip to content</a>
         <Navbar />
         <main id="main-content">{children}</main>
->>>>>>> ali
         <Footer />
       </body>
     </html>
