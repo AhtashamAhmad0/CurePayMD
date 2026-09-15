@@ -11,7 +11,11 @@ const metrics = [
 
 export default function RevenueDashboard() {
   return (
+<<<<<<< HEAD
     <section className="relative overflow-hidden bg-navy-950 py-20 lg:py-28">
+=======
+    <section className="revenue-section relative overflow-hidden bg-navy-950 py-20 lg:py-28">
+>>>>>>> ali
       <div className="absolute inset-0 bg-dot-grid opacity-25" aria-hidden="true" />
       <div className="relative container-px mx-auto max-w-[1400px]">
         <SectionHeading

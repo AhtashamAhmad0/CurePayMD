@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import PracticeCTA from "@/components/shared/PracticeCTA";
+>>>>>>> ali
 import PageHero from "@/components/shared/PageHero";
 import FAQAccordion from "@/components/faq/FAQAccordion";
 import { faqs } from "@/data/faqs";
@@ -36,6 +40,10 @@ export default function FAQPage() {
           <FAQAccordion />
         </div>
       </section>
+<<<<<<< HEAD
+=======
+      <PracticeCTA />
+>>>>>>> ali
     </>
   );
 }

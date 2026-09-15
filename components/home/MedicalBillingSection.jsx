@@ -48,7 +48,11 @@ export default function MedicalBillingSection() {
   const ActiveIcon = currentStep.icon;
 
   return (
+<<<<<<< HEAD
     <section className="bg-white py-20 lg:py-28 overflow-hidden">
+=======
+    <section className="medical-section bg-white py-20 lg:py-28 overflow-hidden">
+>>>>>>> ali
       <div className="container-px mx-auto max-w-[1400px]">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:items-center">
           
@@ -127,9 +131,17 @@ export default function MedicalBillingSection() {
                 const isActive = i === activeIndex;
                 return (
                   <ScrollReveal key={step.title} delay={i * 80}>
+<<<<<<< HEAD
                     <div
                       onClick={() => setActiveIndex(i)}
                       className={`relative h-full rounded-3xl border p-7 cursor-pointer transition-all duration-300 ${
+=======
+                    <button
+                      type="button"
+                      aria-pressed={isActive}
+                      onClick={() => setActiveIndex(i)}
+                      className={`relative w-full text-left h-full rounded-3xl border p-7 cursor-pointer transition-all duration-300 ${
+>>>>>>> ali
                         isActive
                           ? "border-green-600 bg-white shadow-xl shadow-green-950/5 ring-2 ring-green-600/20 -translate-y-1"
                           : "border-navy-900/8 bg-sand-50/50 hover:border-navy-900/20 hover:bg-white"
@@ -149,7 +161,11 @@ export default function MedicalBillingSection() {
                       <p className="mt-2 text-sm leading-relaxed text-ink-500">
                         {step.description}
                       </p>
+<<<<<<< HEAD
                     </div>
+=======
+                    </button>
+>>>>>>> ali
                   </ScrollReveal>
                 );
               })}

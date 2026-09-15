@@ -3,7 +3,11 @@ import { ArrowUpRight } from "lucide-react";
 
 const variants = {
   primary:
+<<<<<<< HEAD
     "bg-green-600 text-white hover:bg-green-700 shadow-[0_1px_0_rgba(255,255,255,0.25)_inset]",
+=======
+    "bg-green-600 text-white hover:bg-green-700 shadow-sm",
+>>>>>>> ali
   navy: "bg-navy-800 text-white hover:bg-navy-700",
   outline:
     "border border-white/30 text-white hover:bg-white/10 backdrop-blur-sm",
@@ -27,7 +31,11 @@ export default function Button({
   as: Comp,
   ...props
 }) {
+<<<<<<< HEAD
   const classes = `group inline-flex items-center justify-center gap-2 rounded-full font-medium tracking-tight transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500 ${variants[variant]} ${sizes[size]} ${className}`;
+=======
+  const classes = `group inline-flex items-center justify-center gap-2 rounded-lg font-semibold tracking-tight transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500 ${variants[variant]} ${sizes[size]} ${className}`;
+>>>>>>> ali
 
   const content = (
     <>

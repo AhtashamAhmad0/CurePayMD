@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import PracticeCTA from "@/components/shared/PracticeCTA";
+>>>>>>> ali
 import * as Icons from "lucide-react";
 import PageHero from "@/components/shared/PageHero";
 import ScrollReveal from "@/components/shared/ScrollReveal";
@@ -49,6 +53,10 @@ export default function ServicesIndexPage() {
           </div>
         </div>
       </section>
+<<<<<<< HEAD
+=======
+      <PracticeCTA />
+>>>>>>> ali
     </>
   );
 }

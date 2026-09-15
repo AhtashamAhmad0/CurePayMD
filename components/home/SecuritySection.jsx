@@ -12,7 +12,11 @@ const points = [
 
 export default function SecuritySection() {
   return (
+<<<<<<< HEAD
     <section className="relative overflow-hidden bg-navy-900 py-20 lg:py-28">
+=======
+    <section className="security-section relative overflow-hidden bg-navy-900 py-20 lg:py-28">
+>>>>>>> ali
       <div
         className="absolute top-0 left-1/2 h-[420px] w-[720px] -translate-x-1/2 opacity-20 blur-3xl"
         style={{ background: "radial-gradient(ellipse at center, rgba(74,143,69,0.6), transparent 70%)" }}

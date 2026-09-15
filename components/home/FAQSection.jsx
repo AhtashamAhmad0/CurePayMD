@@ -11,7 +11,11 @@ export default function FAQSection() {
   const preview = faqs.slice(0, 6);
 
   return (
+<<<<<<< HEAD
     <section className="bg-white py-20 lg:py-28">
+=======
+    <section className="faq-section bg-white py-20 lg:py-28">
+>>>>>>> ali
       <div className="container-px mx-auto max-w-[1400px]">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-12">
           <div className="lg:col-span-4">
