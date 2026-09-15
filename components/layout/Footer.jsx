@@ -89,12 +89,23 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex items-center justify-center border-t border-white/10 pt-8">
-          <p className="text-xs text-white/45 text-center">
+        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
+          <p className="text-xs text-white/45 text-center sm:text-left">
             © {year} CurePayMD. All rights reserved. CurePayMD is a medical and
             dental billing and revenue cycle management service provider.
           </p>
-      </div>
+          <p className="text-xs text-white/45 shrink-0">
+            Developed by{" "}
+            <a
+              href="https://ahasols.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-white/70 hover:text-green-300 transition-colors"
+            >
+              AHA Solutions
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
