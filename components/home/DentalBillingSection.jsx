@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 import Image from "next/image";
 import dentalImage from "@/public/images/medical/dental-consultation.png";
->>>>>>> ali
 import { Smile, Check } from "lucide-react";
 import Button from "@/components/ui/Button";
 import ScrollReveal from "@/components/shared/ScrollReveal";
@@ -16,11 +13,7 @@ const list = [
 
 export default function DentalBillingSection() {
   return (
-<<<<<<< HEAD
-    <section className="relative overflow-hidden bg-green-100 py-20 lg:py-28">
-=======
     <section className="dental-section relative overflow-hidden bg-green-100 py-20 lg:py-28">
->>>>>>> ali
       <div
         className="absolute -bottom-24 -right-24 h-96 w-96 rounded-full opacity-40 blur-3xl"
         style={{ background: "radial-gradient(circle, rgba(74,143,69,0.5), transparent 70%)" }}
@@ -28,12 +21,8 @@ export default function DentalBillingSection() {
       />
       <div className="relative container-px mx-auto grid max-w-[1400px] grid-cols-1 gap-14 lg:grid-cols-12 lg:items-center">
         <ScrollReveal className="lg:col-span-5 order-2 lg:order-1">
-<<<<<<< HEAD
-          <div className="rounded-[2rem] border border-green-700/15 bg-white p-8 shadow-sm">
-=======
           <div className="dental-photo"><Image src={dentalImage} alt="A dentist discussing care with a patient before treatment" fill sizes="(max-width: 1023px) 100vw, 45vw" className="object-cover" /></div>
           <div className="dental-details border border-green-700/15 bg-white p-8">
->>>>>>> ali
             <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-green-700 text-white">
               <Smile className="h-6 w-6" />
             </span>

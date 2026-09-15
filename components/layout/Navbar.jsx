@@ -38,29 +38,16 @@ export default function Navbar() {
             : "bg-white border-b border-navy-900/8 shadow-sm"
         }`}
       >
-<<<<<<< HEAD
-        <nav className="container-px mx-auto flex h-18 max-w-[1400px] items-center justify-between py-3">
-          <Logo priority />
-
-          <ul className="hidden lg:flex items-center gap-1">
-=======
         <nav className="container-px mx-auto flex h-22 max-w-[1400px] items-center justify-between py-3">
           <Logo priority />
 
           <ul className="hidden xl:flex items-center gap-1">
->>>>>>> ali
             {primaryNav.map((item) => (
               <li
                 key={item.label}
                 className="relative"
                 onMouseEnter={() => item.children && setOpenDropdown(item.label)}
                 onMouseLeave={() => item.children && setOpenDropdown(null)}
-<<<<<<< HEAD
-              >
-                <Link
-                  href={item.href}
-                  className={`flex items-center gap-1 rounded-full px-4 py-2 text-[14px] font-medium transition-colors text-navy-900/80 hover:text-navy-950 ${
-=======
                 onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setOpenDropdown(null); }}
               >
                 <Link
@@ -69,7 +56,6 @@ export default function Navbar() {
                   onFocus={() => setOpenDropdown(item.children ? item.label : null)}
                   onKeyDown={(event) => { if (event.key === "Escape") setOpenDropdown(null); }}
                   className={`flex items-center gap-1 rounded-full px-2.5 py-2 text-[13px] font-medium transition-colors text-navy-900/80 hover:text-navy-950 ${
->>>>>>> ali
                     openDropdown === item.label ? "text-navy-950" : ""
                   }`}
                 >
@@ -116,11 +102,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-<<<<<<< HEAD
-          <div className="hidden lg:flex items-center gap-3">
-=======
           <div className="hidden xl:flex items-center gap-3">
->>>>>>> ali
             <a
               href={companyPhoneHref}
               className="flex items-center gap-2 text-[13.5px] font-semibold transition-colors text-navy-900 hover:text-green-700"
@@ -137,11 +119,7 @@ export default function Navbar() {
             type="button"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
-<<<<<<< HEAD
-            className="lg:hidden flex h-10 w-10 items-center justify-center rounded-full border border-navy-900/15 text-navy-900 transition-colors"
-=======
             className="xl:hidden flex h-10 w-10 items-center justify-center rounded-full border border-navy-900/15 text-navy-900 transition-colors"
->>>>>>> ali
           >
             <Menu className="h-5 w-5" />
           </button>
