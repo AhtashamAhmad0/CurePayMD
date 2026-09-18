@@ -1,50 +1,14 @@
-import { notFound } from "next/navigation";
+import ServiceDetailTemplate from "@/components/services/ServiceDetailTemplate";
 import { getServiceBySlug } from "@/data/services";
-import {
-  ServiceHero,
-  ServiceOverview,
-  ServiceProcess,
-  ServiceBenefits,
-  ServiceCTA,
-} from "@/components/services/ServiceSections";
 
-const SLUG = "medical-coding";
-const VARIANT = 1;
+const service = getServiceBySlug("medical-coding");
 
-export function generateMetadata() {
-  const service = getServiceBySlug(SLUG);
-  if (!service) return {};
-  return {
-    title: service.name,
-    description: service.description,
-    alternates: { canonical: `/services/${SLUG}` },
-  };
-}
+export const metadata = {
+  title: `${service.name} | CurePayMD`,
+  description: service.description,
+  alternates: { canonical: `/services/${service.slug}` },
+};
 
-export default function ServicePage() {
-  const service = getServiceBySlug(SLUG);
-  if (!service) return notFound();
-
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    serviceType: service.name,
-    provider: { "@type": "MedicalBusiness", name: "CurePayMD" },
-    description: service.description,
-    areaServed: "US",
-  };
-
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <ServiceHero service={service} variantIndex={VARIANT} />
-      <ServiceOverview service={service} variantIndex={VARIANT} />
-      <ServiceProcess service={service} variantIndex={VARIANT} />
-      <ServiceBenefits service={service} variantIndex={VARIANT} />
-      <ServiceCTA service={service} />
-    </>
-  );
+export default function MedicalCodingPage() {
+  return <ServiceDetailTemplate service={service} />;
 }

@@ -1,7 +1,7 @@
 import ServiceDetailTemplate from "@/components/services/ServiceDetailTemplate";
 import { getServiceBySlug } from "@/data/services";
 
-const service = getServiceBySlug("credentialing");
+const service = getServiceBySlug("specialty-billing");
 
 export const metadata = {
   title: `${service.name} | CurePayMD`,
@@ -9,6 +9,6 @@ export const metadata = {
   alternates: { canonical: `/services/${service.slug}` },
 };
 
-export default function CredentialingPage() {
+export default function SpecialtyBillingPage() {
   return <ServiceDetailTemplate service={service} />;
 }

@@ -1,14 +1,9 @@
 export const servicesMenu = [
-  { label: "Medical Billing", href: "/services/medical-billing", description: "End-to-end billing for medical practices" },
+  { label: "Medical Billing & RCM", href: "/services/medical-billing", description: "End-to-end billing and revenue cycle management" },
+  { label: "Medical Coding", href: "/services/medical-coding", description: "ICD-10, CPT & HCPCS coding support" },
+  { label: "Credentialing & Enrollment", href: "/services/credentialing", description: "Payer credentialing, handled end to end" },
   { label: "Dental Billing", href: "/services/dental-billing", description: "Specialized billing for dental offices" },
-  { label: "Revenue Cycle Management", href: "/services/revenue-cycle-management", description: "Full-cycle financial oversight" },
-  { label: "Medical Coding", href: "/services/medical-coding", description: "Accurate, compliant coding" },
-  { label: "Denial Management", href: "/services/denial-management", description: "Recover revenue from denied claims" },
-  { label: "A/R Follow-Up", href: "/services/ar-follow-up", description: "Persistent, organized collections" },
-  { label: "Eligibility & Benefits Verification", href: "/services/eligibility-verification", description: "Verify coverage before the visit" },
-  { label: "Credentialing & Enrollment", href: "/services/credentialing", description: "Payer credentialing, handled" },
-  { label: "Prior Authorization", href: "/services/prior-authorization", description: "Faster approvals, fewer delays" },
-  { label: "Payment Posting", href: "/services/payment-posting", description: "Accurate posting, reconciled daily" },
+  { label: "Specialty Billing Support", href: "/services/specialty-billing", description: "Billing built around your specialty" },
 ];
 
 export const resourcesMenu = [
